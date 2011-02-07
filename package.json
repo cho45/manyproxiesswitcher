@@ -1,9 +1,9 @@
 {
-    "name": "manyproxiesswitcher", 
-    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
-    "author": "", 
-    "version": "0.1", 
-    "fullName": "manyproxiesswitcher", 
-    "id": "jid0-fPfP9wg8VHzHp70QtLwYcLf7W9c", 
-    "description": "a basic add-on"
+    "name": "manyproxiesswitcher",
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
+    "author": "cho45",
+    "version": "0.1",
+    "fullName": "Many Proxies Switcher",
+    "id": "jid0-fPfP9wg8VHzHp70QtLwYcLf7W9c",
+    "description": "Switch multiple proxies"
 }
