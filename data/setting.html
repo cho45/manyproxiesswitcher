@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<style>
+			body {
+				width: 500px;
+			}
+
+			table {
+				font-size: 12px;
+				width: 450px;
+			}
+
+			th {
+				text-align: right;
+			}
+
+			.buttons {
+				text-align: center;
+			}
+
+			#delete {
+				font-size: 90%;
+				color: #666;
+			}
+
+			#save {
+				width: 5em;
+			}
+		</style>
+	</head>
+	<body>
+		<h1></h1>
+		<table id="detail">
+			<tr>
+				<th>Name:</th>
+				<td colspan="3"><input name="name" size="30"/></td>
+			</tr>
+			<tr>
+				<th>HTTP Proxy:</th>
+				<td><input name="network.proxy.http" size="30"/></td>
+				<th>Port:</th>
+				<td><input name="network.proxy.http_port" size="6"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="3"><label><input type="checkbox" name="network.proxy.share_proxy_settings"/>Use this proxy server for all protocols</label></td>
+			</tr>
+			<tr>
+				<th>SSL Proxy:</th>
+				<td><input name="network.proxy.ssl" size="30"/></td>
+				<th>Port:</th>
+				<td><input name="network.proxy.ssl_port" size="6"/></td>
+			</tr>
+			<tr>
+				<th>FTP Proxy:</th>
+				<td><input name="network.proxy.ftp" size="30"/></td>
+				<th>Port:</th>
+				<td><input name="network.proxy.ftp_port" size="6"/></td>
+			</tr>
+			<tr>
+				<th>SOCKS Proxy:</th>
+				<td><input name="network.proxy.socks" size="30"/></td>
+				<th>Port:</th>
+				<td><input name="network.proxy.socks_port" size="6"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="3">
+					<label><input type="radio" name="network.proxy.socks_version" value="4"/>SOCKS v4</label>
+					<label><input type="radio" name="network.proxy.socks_version" value="5" checked/>SOCKS v5</label>
+				</td>
+			</tr>
+			<tr>
+				<th>No Proxy for:</th>
+				<td colspan="3"><input name="network.proxy.no_proxies_on" size="40"/></td>
+			</tr>
+		</table>
+		<p class="buttons">
+			<input type="button" value="Save" id="save"/>
+			<a href="#" id="delete">Delete this</a>
+		</p>
+	</body>
+</html>

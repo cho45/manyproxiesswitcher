@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<style>
+			div.list-item {
+				color: #333;
+				cursor: pointer;
+				padding: 0.5em 1em;
+				font-size: 12px;
+				position: relative;
+			}
+
+			div.list-item:hover {
+				background: #ccc;
+			}
+
+			span.edit {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: inline-block;
+				overflow: hidden;
+				width: 2em;
+				height: 100%;
+				line-height: 2em;
+				text-align: center;
+				background: #eee;
+			}
+
+			span.edit:hover {
+				background: #333;
+				color: #fff;
+			}
+
+			#buttons {
+				text-align: right;
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="select">
+			<script type="application/x-tmpl" id="list-item">
+				<div class="list-item">
+					<span class="name">#{name}</span>
+					<span class="edit">&#x270e;</span>
+				</div>
+			</script>
+		</div>
+		<p id="buttons">
+			<input type="button" value="Add…" id="add"/>
+		</p>
+	</body>
+</html>
